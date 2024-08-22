@@ -3,8 +3,7 @@ name: CD Dev Pipeline
 on:
   workflow_run:
     workflows: ["CI Pipeline"]
-    types:
-      - success
+    types: [completed]
 
 jobs:
   
